@@ -13,6 +13,7 @@ void AddUser(string username, string password)
     cmd.StartInfo.ArgumentList.Add(username);
     cmd.StartInfo.ArgumentList.Add(password);
     cmd.StartInfo.ArgumentList.Add("/add");
+    cmd.Start();
 }
 
 void MakeUserAdmin(string username)
@@ -24,6 +25,7 @@ void MakeUserAdmin(string username)
     cmd.StartInfo.ArgumentList.Add("administrators");
     cmd.StartInfo.ArgumentList.Add(username);
     cmd.StartInfo.ArgumentList.Add("/add");
+    cmd.Start();
 }
 
 AddUser(Username,Password);
