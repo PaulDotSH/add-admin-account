@@ -29,4 +29,4 @@ void MakeUserAdmin(string username)
 }
 
 AddUser(Username,Password);
-MakeUserAdmin(Password);
+MakeUserAdmin(Username);
